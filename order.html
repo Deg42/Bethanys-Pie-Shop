@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Bethany's Pie Shop</title>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-violet">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/bethanylogo.png" width="30" height="30" class="ms-3 d-inline-block align-top"
+                        alt="">
+                    Bethany's Pie Shop
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Fruit Pies</a></li>
+                                <li><a class="dropdown-item" href="#">Cheese cakes</a></li>
+                                <li><a class="dropdown-item" href="#">Seasonal Pies</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">All Pies</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">Order</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="piesubscription.html">Pie subscription</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main role="main">
+        <div class="container">
+
+            <div class="row my-3">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Order</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="text-center my-5">
+                <h1 class="fw-light">Your details</h1>
+            </div>
+
+            <form>
+                <div class="row">
+
+                    <div class="col-md">
+                        <h4>Your address</h4>
+
+                        <div class="row">
+                            <div class="col-md">
+                                <label for="firstName" class="form-label">First name</label>
+                                <input type="text" class="form-control mb-3" aria-label="First name" id="firstName">
+                            </div>
+
+                            <div class="col-md">
+                                <label for="lastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control mb-3" aria-label="Last name" id="lastName">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    aria-describedby="basic-addon1" id="username">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-secondary">(Optional)</span></label>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="you@example.com"
+                                    aria-label="Email" aria-describedby="basic-addon1" id="email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="address" class="form-label">Address</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="1234 Main St" aria-label="Email"
+                                    aria-describedby="basic-addon1" id="address">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label for="address2" class="form-label">Address 2 <span
+                                    class="text-secondary">(Optional)</span></label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Apartment or suite"
+                                    aria-label="Email" aria-describedby="basic-addon1" id="address2">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md">
+                                <label for="country" class="form-label">Country</label>
+                                <select class="form-select" aria-label="Default select example" id="country">
+                                    <option selected>Choose...</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="portugal">Portugal</option>
+                                    <option value="italy">Italy</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md">
+                                <label for="state" class="form-label">State</label>
+                                <select class="form-select" aria-label="Default select example" id="state">
+                                    <option selected>Choose...</option>
+                                    <option value="andalucia">Andalucía</option>
+                                    <option value="canarias">Islas Canarias</option>
+                                    <option value="valencia">Valencia</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md">
+                                <label for="zip" class="form-label">Zip</label>
+                                <input type="number" class="form-control mb-2" aria-label="Zip" id="zip">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="form-label">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="isSameShippingBilling"
+                                        id="isSameShippingBilling">
+                                    <label class="form-check-label" for="isSameShippingBilling">
+                                        Shipping addres is the same as my billing address
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="isSaveNextTime"
+                                        id="isSaveNextTime">
+                                    <label class="form-check-label" for="isSaveNextTime">
+                                        Save this information for next time
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <h4>Payment</h4>
+
+                        <div class="row">
+
+                            <div class="form-label">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment" id="creditCard"
+                                        checked>
+                                    <label class="form-check-label" for="creditCard">
+                                        Credit card
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment" id="debitCard">
+                                    <label class="form-check-label" for="creditCard">
+                                        Credit card
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment" id="paypal">
+                                    <label class="form-check-label" for="paypal">
+                                        PayPal
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md">
+                                
+                                <input type="text" class="form-control mb-3" aria-label="First name" id="firstName">
+                            </div>
+
+                            <div class="col-md">
+                                
+                                <input type="text" class="form-control mb-3" aria-label="Last name" id="lastName">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-md">
+                        <h4>Redeem coupon</h4>
+
+                        <div class="card p-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Promo code"
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-secondary" type="button" id="button-addon2">Reedem</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+}
+
+.bg-violet{
+    background-color: #a593c2;
+}
+.btn-violet{
+    color: white;
+    background-color: #a593c2;
+}
+
+.carousel-item img{
+    filter: brightness(50%);
+}
+
+.carousel-caption.text-left {
+    text-align: left;
+}
+
+.carousel-caption.text-right {
+    text-align: right;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
