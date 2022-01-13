@@ -13,6 +13,14 @@ body {
     background-color: #cbb4f0;
 }
 
+.bg-instagram {
+    background-color: #c13584;
+}
+
+.btn {
+    color: white;
+}
+
 .btn-violet {
     color: white;
     background-color: #a593c2;
@@ -40,3 +48,9 @@ input[type=number]::-webkit-outer-spin-button {
     width: 600px;
     overflow-x: hidden;
 }
+
+.day{
+    border: 1px solid #000;
+    height: 100px;
+}
+

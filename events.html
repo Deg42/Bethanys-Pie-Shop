@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/custom.css">
+    <title>Bethany's Pie Shop</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-violet">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/bethanylogo.png" width="30" height="30" class="ms-3 d-inline-block align-top"
+                        alt="">
+                    Bethany's Pie Shop
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Fruit Pies</a></li>
+                                <li><a class="dropdown-item" href="#">Cheese cakes</a></li>
+                                <li><a class="dropdown-item" href="#">Seasonal Pies</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">All Pies</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">Order</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="piesubscription.html">Pie subscription</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="container">
+
+            <div class="row my-3">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <div class="breadcrumb-item"><a href="index.html">Home</a></div>
+                        <div class="breadcrumb-item active" aria-current="page">Events</div>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="text-center mb-3">
+                <h1>Bethany's Events</h1>
+                <h2 class="text-secondary">Here is the event calendar!</h2>
+            </div>
+
+            <div class="row">
+                <div class="col bg-light text-center">
+                    <div class="row">
+                        <div class="col bg-violet text-light">January</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">2022</div>
+                    </div>
+                    <div class="row bg-violet">
+                        <div class="col">Mo</div>
+                        <div class="col">Tu</div>
+                        <div class="col">We</div>
+                        <div class="col">Th</div>
+                        <div class="col">Fr</div>
+                        <div class="col">Sa</div>
+                        <div class="col">Su</div>
+                    </div>
+                    <div class="row">
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day" id="d1"><p>1</p></div>
+                        <div class="col day" id="d2"><p>2</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col day" id="d3"><p>3</p></div>
+                        <div class="col day" id="d4"><p>4</p></div>
+                        <div class="col day" id="d5"><p>5</p></div>
+                        <div class="col day" id="d6"><p>6</p></div>
+                        <div class="col day" id="d7"><p>7</p></div>
+                        <div class="col day" id="d8"><p>8</p></div>
+                        <div class="col day" id="d9"><p>9</p></div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col day" id="d10"><p>10</p></div>
+                        <div class="col day" id="d11"><p>11</p></div>
+                        <div class="col day" id="d12"><p>12</p></div>
+                        <div class="col day" id="d13"><p>13</p></div>
+                        <div class="col day" id="d14"><p>14</p></div>
+                        <div class="col day" id="d15"><p>15</p></div>
+                        <div class="col day" id="d16"><p>16</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col day" id="d17"><p>17</p></div>
+                        <div class="col day" id="d18"><p>18</p></div>
+                        <div class="col day" id="d19"><p>19</p></div>
+                        <div class="col day" id="d20"><p>20</p></div>
+                        <div class="col day" id="d21"><p>21</p></div>
+                        <div class="col day" id="d22"><p>22</p></div>
+                        <div class="col day" id="d23"><p>23</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col day" id="d24"><p>24</p></div>
+                        <div class="col day" id="d25"><p>25</p></div>
+                        <div class="col day" id="d26"><p>26</p></div>
+                        <div class="col day" id="d27"><p>27</p></div>
+                        <div class="col day" id="d28"><p>28</p></div>
+                        <div class="col day" id="d29"><p>29</p></div>
+                        <div class="col day" id="d30"><p>30</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col day" id="d31"><p>31</p></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                        <div class="col day"></div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modal-title">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="js/events.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+    "eventos": [
+        {
+            "id": "1",
+            "nombre": "First Event",
+            "descripcion": "First Event Descripction",
+            "dia": "19",
+            "imagen": "images/event1.png",
+            "tipo": "instagram"
+        },
+        {
+            "id": "2",
+            "nombre": "Second Event",
+            "descripcion": "Second Event Descripction",
+            "dia": "3",
+            "imagen": "images/event2.png",
+            "tipo": "television"
+        },{
+            "id": "3",
+            "nombre": "Third Event",
+            "descripcion": "Third Event Descripction",
+            "dia": "25",
+            "imagen": "images/event3.png",
+            "tipo": "instagram"
+        }
+    ]
+}

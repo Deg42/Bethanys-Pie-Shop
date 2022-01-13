@@ -17,10 +17,14 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-violet">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/bethanylogo.png" width="30" height="30" class="ms-3 d-inline-block align-top" alt=""> Bethany's Pie Shop
+                    <img src="images/bethanylogo.png" width="30" height="30" class="ms-3 d-inline-block align-top"
+                        alt="">
+                    Bethany's Pie Shop
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -32,7 +36,8 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Pies
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -55,12 +60,18 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
+                        
                     </ul>
 
                 </div>
             </div>
+        </nav>
         </nav>
 
     </header>
@@ -80,7 +91,7 @@
                 <h1 class="fw-light">Your details</h1>
             </div>
 
-            <form>
+            <form class="needs-validation" action="done.html" novalidate >
                 <div class="row">
 
                     <div class="col-md-8">
@@ -89,19 +100,31 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="firstName" class="form-label">First name</label>
-                                <input type="text" class="form-control mb-3" aria-label="First name" id="firstName">
+                                <input type="text" class="form-control mb-3" aria-label="First name" id="firstName" required>
+
+                                <div class="invalid-feedback">
+                                    Please enter First Name.
+                                </div>
                             </div>
 
                             <div class="col-md-6">
                                 <label for="lastName" class="form-label">Last name</label>
-                                <input type="text" class="form-control mb-3" aria-label="Last name" id="lastName">
+                                <input type="text" class="form-control mb-3" aria-label="Last name" id="lastName" required>
+
+                                <div class="invalid-feedback">
+                                    Please enter Last Name.
+                                </div>
                             </div>
 
                             <div class="col-md-12">
                                 <label for="username" class="form-label">Username</label>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="username">
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="username" required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter Username.
+                                    </div>
                                 </div>
                             </div>
 
@@ -116,7 +139,11 @@
                             <div class="col-md-12">
                                 <label for="address" class="form-label">Address</label>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="1234 Main St" aria-label="Email" aria-describedby="basic-addon1" id="address">
+                                    <input type="text" class="form-control" placeholder="1234 Main St" aria-label="Email" aria-describedby="basic-addon1" id="address" required>
+
+                                    <div class="invalid-feedback">
+                                        Please enter Address.
+                                    </div>
                                 </div>
                             </div>
 
@@ -131,27 +158,40 @@
 
                             <div class="col-md-4">
                                 <label for="country" class="form-label">Country</label>
-                                <select class="form-select" aria-label="Default select example" id="country">
-                                    <option selected>Choose...</option>
+                                <select class="form-select" aria-label="Default select example" id="country" required>
+                                    <option selected disabled>Choose...</option>
                                     <option value="spain">Spain</option>
                                     <option value="portugal">Portugal</option>
                                     <option value="italy">Italy</option>
                                 </select>
+
+                                <div class="invalid-feedback">
+                                    Please enter Country.
+                                </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label for="state" class="form-label">State</label>
-                                <select class="form-select" aria-label="Default select example" id="state">
-                                    <option selected>Choose...</option>
+                                <select class="form-select" aria-label="Default select example" id="state" required>
+                                    <option selected disabled>Choose...</option>
                                     <option value="andalucia">Andalucía</option>
                                     <option value="canarias">Islas Canarias</option>
                                     <option value="valencia">Valencia</option>
                                 </select>
+
+                                <div class="invalid-feedback">
+                                    Please enter State.
+                                </div>
                             </div>
 
                             <div class="col-md-4">
                                 <label for="zip" class="form-label">Zip</label>
-                                <input type="number" class="form-control mb-2" aria-label="Zip" id="zip">
+                                <input type="number" class="form-control mb-2" aria-label="Zip" id="zip" required>
+
+                                <div class="invalid-feedback">
+                                    Please enter Zip.
+                                </div>
+                                
                             </div>
                         </div>
 
@@ -206,31 +246,47 @@
 
                             <div class="col-md-6 my-2">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="cardName" placeholder="Name on card">
+                                    <input type="text" class="form-control" id="cardName" placeholder="Name on card" required>
                                     <label for="cardName">Name on card</label>
                                     <div id="cardHelpBlock" class="form-text">
                                         Full name as displayed on card
+                                    </div>
+
+                                    <div class="invalid-feedback">
+                                        Please enter Card Name.
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6 my-2">
                                 <div class="form-floating mb-3">
-                                    <input type="number" class="form-control" id="cardNumber" placeholder="Credit card number" pattern="[0-9]{13,19}">
+                                    <input type="number" class="form-control" id="cardNumber" placeholder="Credit card number" pattern="[0-9]{13,19}" required>
                                     <label for="cardNumber">Credit card number</label>
+
+                                    <div class="invalid-feedback">
+                                        Please enter Card Number.
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="cardExpiration" placeholder="Expiration" onfocus="(this.type='date')" onfocusout="(this.type='text')">
+                                    <input class="form-control" id="cardExpiration" placeholder="Expiration" onfocus="(this.type='date')" onfocusout="(this.type='text')" required>
                                     <label for="cardExpiration">Expiration</label>
+
+                                    <div class="invalid-feedback">
+                                        Please enter Card Expiration.
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-floating mb-3">
-                                    <input type="number" class="form-control" id="cardCvv" placeholder="CVV" pattern="[0-9]{3,4}">
+                                    <input type="number" class="form-control" id="cardCvv" placeholder="CVV" pattern="[0-9]{3,4}" required>
                                     <label for="cardCvv">CVV</label>
+
+                                    <div class="invalid-feedback">
+                                        Please enter Card CVV.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +309,7 @@
                     <div class="col-md-8">
                         <hr class="d-md-none">
                         <div class="d-grid">
-                            <button class="btn btn-success mt-3" type="button">Place order</button>
+                            <button class="btn btn-success mt-3" type="submit">Place order</button>
                         </div>
                     </div>
 
