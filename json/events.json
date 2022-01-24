@@ -3,7 +3,7 @@
         {
             "id": "1",
             "nombre": "First Event",
-            "descripcion": "First Event Descripction",
+            "descripcion": "First Event Descripction for an instagram event.",
             "dia": "19",
             "imagen": "images/event1.png",
             "tipo": "instagram"
@@ -11,14 +11,14 @@
         {
             "id": "2",
             "nombre": "Second Event",
-            "descripcion": "Second Event Descripction",
+            "descripcion": "Second Event Descripction for a television event",
             "dia": "3",
             "imagen": "images/event2.png",
             "tipo": "television"
         },{
             "id": "3",
             "nombre": "Third Event",
-            "descripcion": "Third Event Descripction",
+            "descripcion": "Third Event Descripction for an instagram event",
             "dia": "25",
             "imagen": "images/event3.png",
             "tipo": "instagram"
